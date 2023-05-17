@@ -13,7 +13,7 @@ namespace Pets_Adpotion.DAL.Entities
         public string Name { get; set; }
 
 
-
-        public ICollection<Pet> Pets { get; set; }
+        [Display(Name= "Pets")]
+        public ICollection<Animal> Animals { get; set; }
     }
 }

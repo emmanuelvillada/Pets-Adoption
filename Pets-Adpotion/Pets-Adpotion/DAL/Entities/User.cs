@@ -38,7 +38,7 @@ namespace Pets_Adpotion.DAL.Entities
         [Display(Name = "Foto")]
         public Guid ImageId { get; set; }
 
-        [Display(Name = "Foto")]
+        [Display(Name = "Foto User")]
         public string ImageFullPath => ImageId == Guid.Empty
             ? $"https://localhost:7048/images/NoImage.png"
             : $"https://sales2023.blob.core.windows.net/users/{ImageId}";

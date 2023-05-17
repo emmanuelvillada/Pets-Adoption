@@ -25,6 +25,15 @@ namespace Pets_Adpotion.DAL.Entities
         [MaxLength(500, ErrorMessage = "El campo {0} debe ser de {1} caracteres.")]
         public string Description { get; set; }
 
+        [Display(Name = "Foto")]
+        public Guid ImageId { get; set; }
+
+        [Display(Name = "Foto Mascota")]
+        public string ImageFullPath => ImageId == Guid.Empty
+            ? $"https://localhost:7048/images/NoImage.png"
+            : $"https://sales2023.blob.core.windows.net/users/{ImageId}";
+
+
         public Owner Owner { get; set; }
     }
 }
