@@ -2,6 +2,9 @@
 using Pets_Adpotion.DAL.Entities;
 using Pets_Adpotion.DAL;
 using Pets_Adpotion.Helpers;
+using ECommerce_MW.Models;
+using Pets_Adpotion.Models;
+using System.Data.Entity;
 
 namespace Pets_Adpotion.Services
 {
@@ -36,10 +39,8 @@ namespace Pets_Adpotion.Services
                 Document = addUserViewModel.Document,
                 Email = addUserViewModel.Username,
                 FirstName = addUserViewModel.FirstName,
-                LastName = addUserViewModel.LastName,
-                ImageId = addUserViewModel.ImageId,
-                PhoneNumber = addUserViewModel.PhoneNumber,
-                City = await _context.Cities.FindAsync(addUserViewModel.CityId),
+                LastName = addUserViewModel.LastName,              
+                PhoneNumber = addUserViewModel.PhoneNumber,               
                 UserName = addUserViewModel.Username,
                 UserType = addUserViewModel.UserType
             };
@@ -68,10 +69,7 @@ namespace Pets_Adpotion.Services
 
         public async Task<User> GetUserAsync(string email)
         {
-            return await _context.Users
-                 .Include(u => u.City)
-                 .ThenInclude(c => c.State)
-                 .ThenInclude(s => s.Country)
+            return await _context.Users                
                  .FirstOrDefaultAsync(u => u.Email == email);
         }
 
@@ -103,9 +101,6 @@ namespace Pets_Adpotion.Services
         public async Task<User> GetUserAsync(Guid userId)
         {
             return await _context.Users
-             .Include(u => u.City)
-             .ThenInclude(c => c.State)
-             .ThenInclude(s => s.Country)
              .FirstOrDefaultAsync(u => u.Id == userId.ToString());
         }
     }

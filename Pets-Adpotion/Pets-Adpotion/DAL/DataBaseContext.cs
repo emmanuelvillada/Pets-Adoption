@@ -23,7 +23,7 @@ namespace Pets_Adpotion.DAL
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<Animal>().HasIndex(a => a.Name);
+           
             
         }
     }

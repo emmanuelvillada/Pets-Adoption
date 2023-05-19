@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using ECommerce_MW.Models;
+using Microsoft.AspNetCore.Identity;
 using Pets_Adpotion.DAL.Entities;
+using Pets_Adpotion.Models;
 
 namespace Pets_Adpotion.Helpers
 {

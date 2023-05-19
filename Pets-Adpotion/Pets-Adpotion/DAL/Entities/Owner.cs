@@ -2,11 +2,9 @@
 
 namespace Pets_Adpotion.DAL.Entities
 {
-    public class Owner
+    public class Owner : Entity_Id
     {
-        [Key]
-        [Required]
-        public Guid Id { get; set; }
+        
 
         [Required(ErrorMessage = "El {0} es obligatorio.")]
         [StringLength(70)]

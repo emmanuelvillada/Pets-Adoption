@@ -26,22 +26,12 @@ namespace Pets_Adpotion.DAL.Entities
         [Display(Name = "Apellidos")]
         [MaxLength(50, ErrorMessage = "El campo {0} debe tener máximo {1} caracteres.")]
         [Required(ErrorMessage = "El campo {0} es obligatorio.")]
-        public string LastName { get; set; }
-
-        
+        public string LastName { get; set; }      
 
         [Display(Name = "Dirección")]
         [MaxLength(200, ErrorMessage = "El campo {0} debe tener máximo {1} caracteres.")]
         [Required(ErrorMessage = "El campo {0} es obligatorio.")]
-        public string Address { get; set; }
-
-        [Display(Name = "Foto")]
-        public Guid ImageId { get; set; }
-
-        [Display(Name = "Foto User")]
-        public string ImageFullPath => ImageId == Guid.Empty
-            ? $"https://localhost:7048/images/NoImage.png"
-            : $"https://sales2023.blob.core.windows.net/users/{ImageId}";
+        public string Address { get; set; }   
 
         [Display(Name = "Tipo de usuario")]
         public UserType UserType { get; set; }

@@ -2,18 +2,16 @@
 
 namespace Pets_Adpotion.DAL.Entities
 {
-    public class Animal
+    public class Animal : Entity_Id
     {
-        [Key]
-        [Required]
-        public int Id { get; set; }
+       
 
         [Display(Name = "Nombre")]
         [MaxLength(50, ErrorMessage = "El campo {0} debe ser de {1} caracteres.")]
         [Required(ErrorMessage = "El campo {0} es obligatorio.")]
         public string Name { get; set; }
 
-        [Display(Name = "Descripción")]
+        [Display(Name = "Edad")]
         [Required(ErrorMessage = "El campo {0} es obligatorio.")]
         public int Age { get; set; }
 
