@@ -1,5 +1,6 @@
-﻿using ECommerce_MW.Enums;
+﻿
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Pets_Adpotion.Enums;
 using System.ComponentModel.DataAnnotations;
 
 namespace ECommerce_MW.Models

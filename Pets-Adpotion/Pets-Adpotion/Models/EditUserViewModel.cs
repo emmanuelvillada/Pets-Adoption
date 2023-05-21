@@ -1,4 +1,4 @@
-﻿using ECommerce_MW.DAL.Entities;
+﻿using Pets_Adpotion.DAL.Entities;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.ComponentModel.DataAnnotations;
 

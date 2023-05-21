@@ -77,6 +77,10 @@
             "Microsoft.IdentityModel.Logging": {
               "target": "Package",
               "version": "[6.30.1, )"
+            },
+            "WindowsAzure.Storage": {
+              "target": "Package",
+              "version": "[9.3.3, )"
             }
           },
           "imports": [

@@ -1,4 +1,6 @@
-﻿using Pets_Adpotion.Helpers;
+﻿using Microsoft.WindowsAzure.Storage;
+using Microsoft.WindowsAzure.Storage.Blob;
+using Pets_Adpotion.Helpers;
 
 namespace Pets_Adpotion.Services
 {
