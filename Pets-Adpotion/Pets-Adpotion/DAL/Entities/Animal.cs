@@ -16,8 +16,8 @@ namespace Pets_Adpotion.DAL.Entities
         public int Age { get; set; }
 
         [Display(Name = "Tipo de Mascota")]
-        [MaxLength(500, ErrorMessage = "El campo {0} debe ser de {1} caracteres.")]
-        public string Type { get; set; }
+        
+        public Type Type { get; set; }
 
         [Display(Name = "Descripción")]
         [MaxLength(500, ErrorMessage = "El campo {0} debe ser de {1} caracteres.")]
@@ -31,7 +31,6 @@ namespace Pets_Adpotion.DAL.Entities
             ? $"https://localhost:7048/images/NoImage.png"
             : $"https://sales2023.blob.core.windows.net/users/{ImageId}";
 
-
-        public Owner Owner { get; set; }
+        
     }
 }

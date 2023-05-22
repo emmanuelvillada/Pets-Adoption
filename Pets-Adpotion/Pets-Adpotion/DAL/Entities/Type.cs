@@ -7,9 +7,6 @@ namespace Pets_Adpotion.DAL.Entities
         [Display(Name ="Tipo")]
         public string Name { get; set; }
 
-        [Display(Name = "Descripción")]
-        public string? Description { get; set; }
-
         public ICollection<Animal> Animals { get; set; }
     }
 }
