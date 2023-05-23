@@ -40,21 +40,11 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.AccessDeniedPath = "/Account/Unauthorized";
 });
 
-//var supportedCultures = new[]
-//{
-//    new CultureInfo("es-CO"),
-//};
 
-//builder.Services.Configure<RequestLocalizationOptions>(options =>
-//{
-//    options.DefaultRequestCulture = new RequestCulture("es-CO");
-//    options.SupportedCultures = supportedCultures;
-//    options.SupportedUICultures = supportedCultures;
-//});
 
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
-//builder.Services.AddTransient<SeederDb>();
+builder.Services.AddTransient<SeederDb>();
 builder.Services.AddScoped<IUserHelper, UserHelper>();
 builder.Services.AddScoped<IDropDownListsHelper, DropDownListsHelper>();
 builder.Services.AddScoped<IAzureBlobHelper, AzureBlobHelper>();
@@ -63,17 +53,17 @@ var app = builder.Build();
 
 app.UseRequestLocalization();
 
-//SeederData();
-//void SeederData()
-//{
-//    IServiceScopeFactory? scopedFactory = app.Services.GetService<IServiceScopeFactory>();
+SeederData();
+void SeederData()
+{
+    IServiceScopeFactory? scopedFactory = app.Services.GetService<IServiceScopeFactory>();
 
-//    using (IServiceScope? scope = scopedFactory.CreateScope())
-//    {
-//        SeederDb? service = scope.ServiceProvider.GetService<SeederDb>();
-//        service.SeederAsync().Wait();
-//    }
-//}
+    using (IServiceScope? scope = scopedFactory.CreateScope())
+    {
+        SeederDb? service = scope.ServiceProvider.GetService<SeederDb>();
+        service.SeederAsync().Wait();
+    }
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

@@ -25,8 +25,8 @@ namespace Pets_Adpotion.DAL
         {
             await _context.Database.EnsureCreatedAsync(); // me reemplaza el comando update-database    
             await PopulateRolesAsync();
-            await PopulateUserAsync("Steve", "Jobs", "steve_jobs_admin@yopmail.com", "3002323232", "Street Apple", "102030", "SteveJobs.png", UserType.Admin);
-            await PopulateUserAsync("Bill", "Gates", "bill_gates_admin@yopmail.com", "4005656656", "Street Microsoft", "405060", "BillGates.png", UserType.User);
+            await PopulateUserAsync("Emmanuel", "Villada", "busca_perros_admin@yopmail.com", "3002323232", "La Milagrosa", "102030", UserType.Admin);
+            await PopulateUserAsync("Dorlan", "Pabon", "busca_gatos_admin@yopmail.com", "4005656656", "Atletico Nacional", "405060", UserType.User);
             await PopulateAnimalsAsync();
             await _context.SaveChangesAsync();
         }
@@ -46,8 +46,7 @@ namespace Pets_Adpotion.DAL
             string email,
             string phone,
             string address,
-            string document,
-            string image,
+            string document,          
             UserType userType)
         {
             User user = await _userHelper.GetUserAsync(email);
@@ -82,7 +81,10 @@ namespace Pets_Adpotion.DAL
             if (!_context.Animals.Any())
             {
                 await AddAnimalAsync("Pitbull 100 kilos", "Princesa", 5, new Type {Name = "Perro" },"Princesa.png") ;
-               
+                await AddAnimalAsync("Perro criollo", "Tommy", 5, new Type { Name = "Perro" }, "Tommy.png");
+                await AddAnimalAsync("Gato micoon", "´Lupita", 5, new Type { Name = "Gato" }, "gato.png");
+                await AddAnimalAsync("Gato criollo ", "´Rabbit", 5, new Type { Name = "Gato" }, "gato-criollo.png");
+
             }
         }
 

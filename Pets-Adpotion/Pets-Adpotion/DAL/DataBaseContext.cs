@@ -13,7 +13,7 @@ namespace Pets_Adpotion.DAL
         }
 
         public DbSet<Animal> Animals { get; set; }
-        public DbSet<Owner> Owners { get; set; }
+        
         public DbSet<Entities.Type> Types { get; set; }
 
 
