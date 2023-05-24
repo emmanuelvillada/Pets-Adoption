@@ -9,57 +9,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Pets_Adpotion
 build_property.RootNamespace = Pets_Adpotion
-build_property.ProjectDir = C:\Users\Usuario\Source\Repos\emmanuelvillada\Pets-Adoption\Pets-Adpotion\Pets-Adpotion\
+build_property.ProjectDir = C:\Users\Usuario\source\repos\Pets-Adoption\Pets-Adpotion\Pets-Adpotion\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\Usuario\Source\Repos\emmanuelvillada\Pets-Adoption\Pets-Adpotion\Pets-Adpotion
+build_property.MSBuildProjectDirectory = C:\Users\Usuario\source\repos\Pets-Adoption\Pets-Adpotion\Pets-Adpotion
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Usuario/Source/Repos/emmanuelvillada/Pets-Adoption/Pets-Adpotion/Pets-Adpotion/Views/Account/ChangePassword.cshtml]
+[C:/Users/Usuario/source/repos/Pets-Adoption/Pets-Adpotion/Pets-Adpotion/Views/Account/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Source/Repos/emmanuelvillada/Pets-Adoption/Pets-Adpotion/Pets-Adpotion/Views/Account/EditUser.cshtml]
+[C:/Users/Usuario/source/repos/Pets-Adoption/Pets-Adpotion/Pets-Adpotion/Views/Account/EditUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxFZGl0VXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Source/Repos/emmanuelvillada/Pets-Adoption/Pets-Adpotion/Pets-Adpotion/Views/Account/Login.cshtml]
+[C:/Users/Usuario/source/repos/Pets-Adoption/Pets-Adpotion/Pets-Adpotion/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Source/Repos/emmanuelvillada/Pets-Adoption/Pets-Adpotion/Pets-Adpotion/Views/Account/Register.cshtml]
+[C:/Users/Usuario/source/repos/Pets-Adoption/Pets-Adpotion/Pets-Adpotion/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Source/Repos/emmanuelvillada/Pets-Adoption/Pets-Adpotion/Pets-Adpotion/Views/Account/Unauthorized.cshtml]
+[C:/Users/Usuario/source/repos/Pets-Adoption/Pets-Adpotion/Pets-Adpotion/Views/Account/Unauthorized.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxVbmF1dGhvcml6ZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Source/Repos/emmanuelvillada/Pets-Adoption/Pets-Adpotion/Pets-Adpotion/Views/Home/Index.cshtml]
+[C:/Users/Usuario/source/repos/Pets-Adoption/Pets-Adpotion/Pets-Adpotion/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Source/Repos/emmanuelvillada/Pets-Adoption/Pets-Adpotion/Pets-Adpotion/Views/Home/Privacy.cshtml]
+[C:/Users/Usuario/source/repos/Pets-Adoption/Pets-Adpotion/Pets-Adpotion/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Source/Repos/emmanuelvillada/Pets-Adoption/Pets-Adpotion/Pets-Adpotion/Views/Shared/Error.cshtml]
+[C:/Users/Usuario/source/repos/Pets-Adoption/Pets-Adpotion/Pets-Adpotion/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Source/Repos/emmanuelvillada/Pets-Adoption/Pets-Adpotion/Pets-Adpotion/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Usuario/source/repos/Pets-Adoption/Pets-Adpotion/Pets-Adpotion/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Source/Repos/emmanuelvillada/Pets-Adoption/Pets-Adpotion/Pets-Adpotion/Views/_ViewImports.cshtml]
+[C:/Users/Usuario/source/repos/Pets-Adoption/Pets-Adpotion/Pets-Adpotion/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Source/Repos/emmanuelvillada/Pets-Adoption/Pets-Adpotion/Pets-Adpotion/Views/_ViewStart.cshtml]
+[C:/Users/Usuario/source/repos/Pets-Adoption/Pets-Adpotion/Pets-Adpotion/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Source/Repos/emmanuelvillada/Pets-Adoption/Pets-Adpotion/Pets-Adpotion/Views/Shared/_Layout.cshtml]
+[C:/Users/Usuario/source/repos/Pets-Adoption/Pets-Adpotion/Pets-Adpotion/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-lteb7pi5xc

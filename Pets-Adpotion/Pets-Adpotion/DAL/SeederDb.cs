@@ -1,10 +1,7 @@
 ﻿using Pets_Adpotion.DAL.Entities;
 using Pets_Adpotion.Enums;
 using Pets_Adpotion.Helpers;
-using System.Data.Entity;
-using System.Diagnostics.Metrics;
-using static System.Net.Mime.MediaTypeNames;
-using Type = Pets_Adpotion.DAL.Entities.Type;
+
 
 namespace Pets_Adpotion.DAL
 {
@@ -53,8 +50,7 @@ namespace Pets_Adpotion.DAL
 
             if (user == null)
             {
-                Guid imageId = await _azureBlobHelper.UploadAzureBlobAsync
-                    ($"{Environment.CurrentDirectory}\\wwwroot\\images\\users\\{image}", "users");
+               
 
                 user = new User
                 {
@@ -80,15 +76,15 @@ namespace Pets_Adpotion.DAL
         {
             if (!_context.Animals.Any())
             {
-                await AddAnimalAsync("Pitbull 100 kilos", "Princesa", 5, new Type {Name = "Perro" },"Princesa.png") ;
-                await AddAnimalAsync("Perro criollo", "Tommy", 5, new Type { Name = "Perro" }, "Tommy.png");
-                await AddAnimalAsync("Gato micoon", "´Lupita", 5, new Type { Name = "Gato" }, "gato.png");
-                await AddAnimalAsync("Gato criollo ", "´Rabbit", 5, new Type { Name = "Gato" }, "gato-criollo.png");
+                await AddAnimalAsync("Pitbull 100 kilos", "Princesa", 5, new Animal_Type {Name = "Perro" },"Princesa.png") ;
+                await AddAnimalAsync("Perro criollo", "Tommy", 5, new Animal_Type { Name = "Perro" }, "Tommy.png");
+                await AddAnimalAsync("Gato micoon", "´Lupita", 5, new Animal_Type { Name = "Gato" }, "gato.png");
+                await AddAnimalAsync("Gato criollo ", "´Rabbit", 5, new Animal_Type { Name = "Gato" }, "gato-criollo.png");
 
             }
         }
 
-        private async Task AddAnimalAsync(string description, string name,int age, Type type
+        private async Task AddAnimalAsync(string description, string name,int age, Animal_Type type
             , string image)
         {
             Animal animal = new()

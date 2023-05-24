@@ -400,3 +400,15 @@ C:\Users\Usuario\Source\Repos\emmanuelvillada\Pets-Adoption\Pets-Adpotion\Pets-A
 C:\Users\Usuario\Source\Repos\emmanuelvillada\Pets-Adoption\Pets-Adpotion\Pets-Adpotion\obj\Debug\net6.0\Pets-Adpotion.pdb
 C:\Users\Usuario\Source\Repos\emmanuelvillada\Pets-Adoption\Pets-Adpotion\Pets-Adpotion\obj\Debug\net6.0\Pets-Adpotion.genruntimeconfig.cache
 C:\Users\Usuario\Source\Repos\emmanuelvillada\Pets-Adoption\Pets-Adpotion\Pets-Adpotion\obj\Debug\net6.0\ref\Pets-Adpotion.dll
+C:\Users\Usuario\Source\Repos\Pets-Adoption\Pets-Adpotion\Pets-Adpotion\obj\Debug\net6.0\Pets-Adpotion.csproj.AssemblyReference.cache
+C:\Users\Usuario\Source\Repos\Pets-Adoption\Pets-Adpotion\Pets-Adpotion\obj\Debug\net6.0\Pets-Adpotion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Source\Repos\Pets-Adoption\Pets-Adpotion\Pets-Adpotion\obj\Debug\net6.0\Pets-Adpotion.AssemblyInfoInputs.cache
+C:\Users\Usuario\Source\Repos\Pets-Adoption\Pets-Adpotion\Pets-Adpotion\obj\Debug\net6.0\Pets-Adpotion.AssemblyInfo.cs
+C:\Users\Usuario\Source\Repos\Pets-Adoption\Pets-Adpotion\Pets-Adpotion\obj\Debug\net6.0\Pets-Adpotion.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Source\Repos\Pets-Adoption\Pets-Adpotion\Pets-Adpotion\obj\Debug\net6.0\Pets-Adpotion.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Usuario\Source\Repos\Pets-Adoption\Pets-Adpotion\Pets-Adpotion\obj\Debug\net6.0\Pets-Adpotion.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Usuario\Source\Repos\Pets-Adoption\Pets-Adpotion\Pets-Adpotion\obj\Debug\net6.0\Pets-Adpotion.RazorAssemblyInfo.cache
+C:\Users\Usuario\Source\Repos\Pets-Adoption\Pets-Adpotion\Pets-Adpotion\obj\Debug\net6.0\Pets-Adpotion.RazorAssemblyInfo.cs
+C:\Users\Usuario\Source\Repos\Pets-Adoption\Pets-Adpotion\Pets-Adpotion\obj\Debug\net6.0\Pets-Adpotion.dll
+C:\Users\Usuario\Source\Repos\Pets-Adoption\Pets-Adpotion\Pets-Adpotion\obj\Debug\net6.0\refint\Pets-Adpotion.dll
+C:\Users\Usuario\Source\Repos\Pets-Adoption\Pets-Adpotion\Pets-Adpotion\obj\Debug\net6.0\Pets-Adpotion.pdb

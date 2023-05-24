@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\Pets-Adpotion",
-    "\\Pets-Adpotion\\Pets-Adpotion",
-    "\\Pets-Adpotion\\Pets-Adpotion\\Models"
+    "\\Pets-Adpotion\\Pets-Adpotion"
   ],
-  "SelectedNode": "\\Pets-Adpotion\\Pets-Adpotion.sln",
+  "SelectedNode": "\\Pets-Adpotion\\Pets-Adpotion\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

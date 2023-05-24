@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Pets_Adpotion.Enums;
 using System.ComponentModel.DataAnnotations;
-using System.Xml.Linq;
 
 namespace Pets_Adpotion.DAL.Entities
 {
@@ -42,6 +41,9 @@ namespace Pets_Adpotion.DAL.Entities
 
         [Display(Name = "Usuario")]
         public string FullNameWithDocument => $"{FirstName} {LastName} - {Document}";
+
+        [Display (Name = "Mascota")]
+        public Animal? Pet { get; set; }
 
     }
 }
