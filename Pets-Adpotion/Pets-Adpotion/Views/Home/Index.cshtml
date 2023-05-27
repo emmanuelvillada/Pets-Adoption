@@ -4,10 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
-@if (Model.Quantity > 0)
-{
-    <a asp-action="ShowCartAndConfirm" class="btn btn-outline-primary">Ver Carro de Compras (@Model.Quantity)</a>
-}
+
 
 @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
 {
@@ -38,7 +35,7 @@ else
                                     <img src="@item.ImageFullPath" style="height:150px; max-width:280px;" />
                                     <p class="mt-2">
                                         @item.Description
-                                        <h4 class="text-danger">Producto no disponible</h4>
+                                        <h4 class="text-danger">Mascota no disponible</h4>
                                     </p>
                                 </div>
                                 <div class="card_foot">
@@ -57,7 +54,7 @@ else
                                     <img src="@item.ImageFullPath" style="height:150px; max-width:280px;" />
                                     <p class="mt-2">
                                         @item.Description
-                                        <h4>@Html.DisplayFor(modelItem => item.Price)</h4>
+                                        <h4>@Html.DisplayFor(modelItem => item.Age)</h4>
                                     </p>
                                 </div>
                                 <div class="card_foot">

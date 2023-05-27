@@ -61,8 +61,7 @@ namespace Pets_Adpotion.DAL
                     UserName = email,
                     PhoneNumber = phone,
                     Address = address,
-                    Document = document,
-                    
+                    Document = document,                 
                     UserType = userType,
                     
                 };
@@ -91,10 +90,8 @@ namespace Pets_Adpotion.DAL
             {
                 Description = description,
                 Name = name,
-                Age = age,
-               
-                Type = type,
-                
+                Age = age,             
+                Type = type,              
                 ImageId = await _azureBlobHelper.UploadAzureBlobAsync($"{Environment.CurrentDirectory}\\wwwroot\\images\\animals\\{image}", "products")
             };
 

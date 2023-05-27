@@ -8,7 +8,7 @@ namespace Pets_Adpotion.DAL.Entities
         [Required]
         public Guid Id { get; set; }
 
-        [Display(Name ="Tipo")]
+        [Display(Name = "Tipo de Mascota")]
         public string Name { get; set; }
 
         public ICollection<Animal> Animals { get; set; }
