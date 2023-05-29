@@ -15,7 +15,7 @@ namespace Pets_Adpotion.DAL.Entities
 
         [Display(Name = "Edad")]
         [Required(ErrorMessage = "El campo {0} es obligatorio.")]
-        public string Age { get; set; }
+        public int Age { get; set; }
 
         [Display(Name = "Tipo de Mascota")]       
         public Animal_Type Type { get; set; }
