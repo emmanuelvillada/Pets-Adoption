@@ -6,6 +6,8 @@ namespace Pets_Adpotion.DAL.Entities
 {
     public class User : IdentityUser
     {
+        public ICollection<Adopter> Adopters { get; set; }
+
         [Display(Name = "Fecha de creación")]
         public DateTime? CreatedDate { get; set; }
 
@@ -42,8 +44,7 @@ namespace Pets_Adpotion.DAL.Entities
         [Display(Name = "Usuario")]
         public string FullNameWithDocument => $"{FirstName} {LastName} - {Document}";
 
-        [Display (Name = "Mascota")]
-        public Animal? Pet { get; set; }
+        
 
     }
 }

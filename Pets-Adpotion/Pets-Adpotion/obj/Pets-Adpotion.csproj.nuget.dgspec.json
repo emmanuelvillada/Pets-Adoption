@@ -11,7 +11,7 @@
         "projectName": "Pets-Adpotion",
         "projectPath": "C:\\Users\\Usuario\\source\\repos\\Pets-Adoption\\Pets-Adpotion\\Pets-Adpotion\\Pets-Adpotion.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Source\\Repos\\Pets-Adoption\\Pets-Adpotion\\Pets-Adpotion\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\source\\repos\\Pets-Adoption\\Pets-Adpotion\\Pets-Adpotion\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,6 +69,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.3, )"
+            },
+            "Microsoft.IdentityModel.Logging": {
+              "target": "Package",
+              "version": "[6.30.1, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.13, )"
             },
             "WindowsAzure.Storage": {
               "target": "Package",

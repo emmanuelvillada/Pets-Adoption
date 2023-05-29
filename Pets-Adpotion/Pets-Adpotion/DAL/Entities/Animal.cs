@@ -15,10 +15,9 @@ namespace Pets_Adpotion.DAL.Entities
 
         [Display(Name = "Edad")]
         [Required(ErrorMessage = "El campo {0} es obligatorio.")]
-        public int Age { get; set; }
+        public string Age { get; set; }
 
-        [Display(Name = "Tipo de Mascota")]
-        
+        [Display(Name = "Tipo de Mascota")]       
         public Animal_Type Type { get; set; }
 
         [Display(Name = "Descripción")]
@@ -28,13 +27,15 @@ namespace Pets_Adpotion.DAL.Entities
         [Display(Name = "Foto")]
         public Guid ImageId { get; set; }
 
+        [Display(Name = "adoptador")]
+        public Adopter? Owner { get; set; }
+
         [Display(Name = "Foto Mascota")]
         public string ImageFullPath => ImageId == Guid.Empty
-            ? $"https://localhost:7048/images/NoImage.png"
+            ? $"https://localhost:7048/images/Image_not_available.png"
             : $"https://sales2023.blob.core.windows.net/users/{ImageId}";
 
-        [Display (Name = "Dueño")]
-        public User? Owner { get; set; }
+        
         
     }
 }

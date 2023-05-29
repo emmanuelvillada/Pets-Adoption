@@ -16,7 +16,7 @@ namespace Pets_Adpotion.Services
 
         public async Task<IEnumerable<SelectListItem>> GetDDLTypesAsync()
         {
-            List<SelectListItem> listTypes = await _context.Types
+            List<SelectListItem> listTypes = await _context.AnimalTypes
                 .Select(c => new SelectListItem
                 {
                     Text = c.Name, //Col
