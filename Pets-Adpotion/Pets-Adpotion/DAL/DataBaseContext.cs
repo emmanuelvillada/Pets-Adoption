@@ -1,5 +1,4 @@
-﻿using System.Diagnostics.Metrics;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Pets_Adpotion.DAL.Entities;
 

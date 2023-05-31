@@ -28,10 +28,10 @@
                         @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Countries" asp-action="Index">Agregar Mascotas</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Animal" asp-action="Create">Agregar Mascotas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Categories" asp-action="Index">Mascotas</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Animal" asp-action="Index">Mascotas</a>
                             </li>                         
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Users" asp-action="Index">Usuarios</a>

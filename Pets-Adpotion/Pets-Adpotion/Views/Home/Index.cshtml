@@ -1,4 +1,4 @@
-﻿﻿@model Pets_Adpotion.Models.HomeViewModel
+﻿@model Pets_Adpotion.Models.HomeViewModel
 
 @{
     ViewData["Title"] = "Index";
@@ -26,27 +26,9 @@ else
             {
                 if (item != null)
                 {
-                    if (item.Stock < 1)
-                    {
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card_title">@item.Name</div>
-                                <div class="card_body zoom">
-                                    <img src="@item.ImageFullPath" style="height:150px; max-width:280px;" />
-                                    <p class="mt-2">
-                                        @item.Description
-                                        <h4 class="text-danger">Mascota no disponible</h4>
-                                    </p>
-                                </div>
-                                <div class="card_foot">
-                                    <button asp-action="Details" asp-route-productId="@item.Id" class="btn btn-secondary" disabled>Detalles</button>
-                                    <button asp-action="AddProductInKart" asp-route-productId="@item.Id" class="btn btn-primary" disabled>Agregar</button>
-                                </div>
-                            </div>
-                        </div>
-                    }
-                    else
-                    {
+                    
+                  
+                    
                         <div class="col-md-3">
                             <div class="card">
                                 <div class="card_title">@item.Name</div>
@@ -63,7 +45,7 @@ else
                                 </div>
                             </div>
                         </div>
-                    }
+                    
                 }
             }
         </div>
