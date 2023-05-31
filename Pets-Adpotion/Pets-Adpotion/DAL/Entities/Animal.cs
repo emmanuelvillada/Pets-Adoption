@@ -8,27 +8,27 @@ namespace Pets_Adpotion.DAL.Entities
         [Required]
         public Guid Id { get; set; }
 
-        [Display(Name = "Nombre")]
+        [Display(Name = "Nombre Mascota")]
         [MaxLength(50, ErrorMessage = "El campo {0} debe ser de {1} caracteres.")]
         [Required(ErrorMessage = "El campo {0} es obligatorio.")]
         public string Name { get; set; }
 
-        [Display(Name = "Edad")]
+        [Display(Name = "Edad Mascota")]
         [Required(ErrorMessage = "El campo {0} es obligatorio.")]
         public int Age { get; set; }
-
-        [Display(Name = "Tipo de Mascota")]       
-        public Animal_Type Type { get; set; }
 
         [Display(Name = "Descripción")]
         [MaxLength(500, ErrorMessage = "El campo {0} debe ser de {1} caracteres.")]
         public string Description { get; set; }
 
-        [Display(Name = "Foto")]
-        public Guid ImageId { get; set; }
+        [Display(Name = "Tipo de Mascota")]
+        public Animal_Type Type { get; set; }
 
-        [Display(Name = "adoptador")]
+        [Display(Name = "Adoptador")]
         public User? Owner { get; set; }
+
+        [Display(Name = "Foto")]
+        public Guid ImageId { get; set; }        
 
         [Display(Name = "Foto Mascota")]
         public string ImageFullPath => ImageId == Guid.Empty
