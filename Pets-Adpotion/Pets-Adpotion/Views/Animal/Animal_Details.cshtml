@@ -1,4 +1,4 @@
-﻿﻿@model Pets_Adpotion.DAL.Entities.Animal
+﻿@model Pets_Adpotion.DAL.Entities.Animal
 
 @{
     ViewData["Title"] = "Details";
@@ -35,19 +35,7 @@
                             <th></th>
                         </tr>
                     </thead>
-                    <tbody>
-                        @foreach (var item in Model.Animal)
-                        {
-                            <tr>
-                                <td>
-                                    <img src="@item.ImageFullPath" style="width:150px;" />
-                                </td>
-                                <td>
-                                    <a asp-action="DeleteImage" asp-route-imageId="@item.Id" class="btn btn-outline-danger">Borrar Imagen</a>
-                                </td>
-                            </tr>
-                        }
-                    </tbody>
+                    
                 </table>
             </div>
         </div>
@@ -62,24 +50,12 @@
                     <thead>
                         <tr>
                             <th>
-                                @Html.DisplayNameFor(model => model.Animal_Type.Name)
+                                @Html.DisplayNameFor(model => model.Type.Name)
                             </th>
                             <th></th>
                         </tr>
                     </thead>
-                    <tbody>
-                        @foreach (var item in Model.ProductCategories)
-                        {
-                            <tr>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Animal_Type.Name)
-                                </td>
-                                <td>
-                                    <a asp-action="DeleteCategory" asp-route-categoryId="@item.Id" class="btn btn-outline-danger">Borrar Categoría</a>
-                                </td>
-                            </tr>
-                        }
-                    </tbody>
+                   
                 </table>
             </div>
         </div>

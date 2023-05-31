@@ -101,24 +101,50 @@ namespace Pets_Adpotion.Controllers
 
 
         // GET: AnimalController/Edit/5
-        public ActionResult Edit(int id)
+        public async Task<ActionResult> EditAsync(Guid? animalId)
         {
-            return View();
+            if (animalId == null) return NotFound();
+
+            Animal animal = await _context.Animals.FindAsync(animalId);
+            if (animal == null) return NotFound();
+
+            EditAnimalViewModel editAnimalViewModel = new()
+            {
+                Description = animal.Description,
+                Id = animal.Id,
+                Name = animal.Name,
+                Age = animal.Age,
+               
+            };
+
+            return View(editAnimalViewModel);
         }
 
         // POST: AnimalController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public async Task<ActionResult> EditAsync(Guid? Id, EditAnimalViewModel editAnimalViewModel)
         {
+            if (Id != editAnimalViewModel.Id) return NotFound();
+
             try
             {
+                Animal animal = await _context.Animals.FindAsync(editAnimalViewModel.Id);
+                animal.Description = editAnimalViewModel.Description;
+                animal.Name = editAnimalViewModel.Name;
+                animal.Age = editAnimalViewModel.Age;
+                
+                _context.Update(animal);
+                await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            catch
+           
+            catch (Exception exception)
             {
-                return View();
+                ModelState.AddModelError(string.Empty, exception.Message);
             }
+
+            return View(editAnimalViewModel);
         }
 
         // GET: AnimalController/Delete/5

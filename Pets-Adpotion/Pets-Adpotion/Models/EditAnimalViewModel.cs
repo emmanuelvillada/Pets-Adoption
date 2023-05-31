@@ -8,11 +8,7 @@ namespace Pets_Adpotion.Models
         [Required]
         public Guid Id { get; set; }
 
-        [Display(Name = "Fecha de creación")]
-        public DateTime? CreatedDate { get; set; }
-
-        [Display(Name = "Fecha de modificación")]
-        public DateTime? ModifiedDate { get; set; }
+        
 
         [Display(Name = "Nombre")]
         [MaxLength(50, ErrorMessage = "El campo {0} debe tener máximo {1} caracteres.")]
