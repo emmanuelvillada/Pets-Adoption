@@ -30,7 +30,7 @@ namespace Pets_Adpotion.Controllers
         {
 
             return View(await _context.Animals
-                .Include(a => a.AnimalTypes)
+                .Include(a => a.Types)
                 .ToListAsync());
         }
 
@@ -156,16 +156,18 @@ namespace Pets_Adpotion.Controllers
         // POST: AnimalController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public async Task<ActionResult> DeleteAsync(Animal animalModel)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            Animal animal = await _context.Animals
+                .Include(t => t.Animal_Type)
+                .FirstOrDefaultAsync(p => p.Id == animalModel.Id);
+
+            _context.Animals.Remove(animal);
+            await _context.SaveChangesAsync();
+
+           
+
+            return RedirectToAction(nameof(Index));
         }
     }
 }
