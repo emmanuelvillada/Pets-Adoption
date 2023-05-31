@@ -30,7 +30,7 @@ namespace Pets_Adpotion.Controllers
         {
 
             return View(await _context.Animals
-                .Include(a => a.Types)
+                .Include(a => a.Type)
                 .ToListAsync());
         }
 

@@ -16,12 +16,12 @@ namespace Pets_Adpotion.DAL
 
         public DbSet<Animal_Type> AnimalTypes { get; set; }
 
-        public DbSet<Adopter> Adopters { get; set; }
+        
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-           
+            modelBuilder.Entity<Animal_Type>().HasIndex(t => t.Name);
         }
 
 

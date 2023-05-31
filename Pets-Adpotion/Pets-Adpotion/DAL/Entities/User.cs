@@ -6,7 +6,8 @@ namespace Pets_Adpotion.DAL.Entities
 {
     public class User : IdentityUser
     {
-        public ICollection<Adopter> Adopters { get; set; }
+        [Display(Name = "Mascotas")]
+        public ICollection<Animal>? Animals { get; set; }
 
         [Display(Name = "Fecha de creación")]
         public DateTime? CreatedDate { get; set; }

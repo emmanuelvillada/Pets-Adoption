@@ -28,7 +28,7 @@ namespace Pets_Adpotion.DAL.Entities
         public Guid ImageId { get; set; }
 
         [Display(Name = "adoptador")]
-        public Adopter? Owner { get; set; }
+        public User? Owner { get; set; }
 
         [Display(Name = "Foto Mascota")]
         public string ImageFullPath => ImageId == Guid.Empty
