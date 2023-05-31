@@ -28,10 +28,8 @@ namespace Pets_Adpotion.Controllers
         // GET: AnimalController
         public async Task<ActionResult> Index()
         {
-
-            return View(await _context.Animals
-                .Include(a => a.Type)
-                .ToListAsync());
+            return View(await _context.Animals                          
+                            .ToListAsync());
         }
 
         // GET: AnimalController/Details/5
@@ -39,8 +37,7 @@ namespace Pets_Adpotion.Controllers
         {
             if (animalId == null) return NotFound();
 
-            Animal animal = await _context.Animals
-                .Include(a => a.AnimalTypes)              
+            Animal animal = await _context.Animals         
                 .FirstOrDefaultAsync(a => a.Id == animalId);
             if (animal == null) return NotFound();
 
@@ -159,7 +156,6 @@ namespace Pets_Adpotion.Controllers
         public async Task<ActionResult> DeleteAsync(Animal animalModel)
         {
             Animal animal = await _context.Animals
-                .Include(t => t.Animal_Type)
                 .FirstOrDefaultAsync(p => p.Id == animalModel.Id);
 
             _context.Animals.Remove(animal);
