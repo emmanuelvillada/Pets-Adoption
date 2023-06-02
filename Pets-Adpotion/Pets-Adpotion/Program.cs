@@ -1,13 +1,10 @@
 
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Localization;
 using Pets_Adpotion.DAL.Entities;
 using Pets_Adpotion.DAL;
 using Pets_Adpotion.Helpers;
 using Pets_Adpotion.Services;
 using System.Text.Json.Serialization;
-using Microsoft.AspNetCore.Razor.Runtime;
-using Microsoft.IdentityModel.Logging;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
